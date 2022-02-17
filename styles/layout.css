@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #02012B;
+    cursor: pointer;
+    ;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+label {
+    width: 100%;
+
+}
+
+footer,
+header {
+    position: relative;
+    width: 100%;
+}
+
+.select {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container--small {
+    max-width: 1152px;
+}
+
+.btn {
+    background: #19BCE4;
+    border-radius: 6px;
+    text-align: center;
+    padding: 11px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn--rectangle {
+    border-radius: 0;
+}
+
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 61px;
+    color: #222222;
+    text-align: center;
+}
+
+
+
+.title--white {
+    color: white;
+}
+
+.subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #555555;
+    text-align: center;
+}
+
+.subtitle--white {
+    color: white;
+}
+
+.subtitle--small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+}
+
+.title--small {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #222222;
+}
+
+
+
+.icon-home {
+    font-size: 40px;
+    color: rgba(25, 188, 228, 1);
+}
+
+.image {
+    max-width: 100%;
+}

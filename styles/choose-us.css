@@ -1,0 +1,43 @@
+.choose-us {
+    width: 100%;
+    background: #F8FDFE;
+}
+
+.choose-us__container {
+    padding: 93px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choose-us__block {
+    width: 50%;
+}
+
+.choose-us__block:first-child {
+    margin-right: 36px;
+}
+
+.choose-us__title {
+    margin-bottom: 20px;
+}
+
+.choose-us__subtitle {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.choose-us__button {
+    max-width: 190px;
+    position: relative;
+
+}
+
+.choose-us__button::after {
+    content: url(../img/right.svg);
+    position: absolute;
+    top: 35%;
+    right: 12%;
+
+}

@@ -1,0 +1,72 @@
+.about-us {
+    width: 100%;
+    margin: 120px 0 195px;
+}
+
+.about-us__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-us__block {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.about-us__block:first-child{
+margin-right: 42px;
+}
+
+
+.about-us__img--sm{
+    max-width: 240px;
+    height: auto;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+}
+
+.about-us__article{
+    margin-bottom: 10px;
+}
+
+.about-us__title{
+    margin-bottom: 24px;
+}
+
+.about-us__subtitle{
+    margin-bottom: 40px;
+    padding-right: 50px;
+}
+
+.about-us__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.about-us__items-item:first-child{
+    margin-right: 90px;
+}
+
+.about-us-item__icon{
+    font-size: 56px;
+    color: #19BCE4;
+    margin-bottom: 24px;
+}
+
+.about-us-item__title{
+    margin-bottom: 16px;
+}
+
+.about-us__button{
+    max-width: 169px;
+}
+
+.about-us__button-explore{
+    padding: 16px 0;
+}

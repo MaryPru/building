@@ -1,0 +1,13 @@
+
+.icon-facebook:before { content: '\e800'; } /* '' */
+.icon-team:before { content: '\e805'; } /* '' */
+.icon-consultation:before { content: '\e806'; } /* '' */
+.icon-home:before { content: '\e807'; } /* '' */
+.icon-tel:before { content: '\e80a'; } /* '' */
+.icon-in:before { content: '\e80b'; } /* '' */
+.icon-insta:before { content: '\e80c'; } /* '' */
+.icon-twitter:before { content: '\e80d'; } /* '' */
+.icon-apartment:before { content: '\e80e'; } /* '' */
+.icon-villa:before { content: '\e80f'; } /* '' */
+.icon-studio-mixer:before { content: '\e810'; } /* '' */
+.icon-house:before { content: '\e811'; } /* '' */
