@@ -31,7 +31,7 @@
 .choose-us__button {
     max-width: 190px;
     position: relative;
-
+    transition: 400ms;
 }
 
 .choose-us__button::after {
@@ -39,5 +39,11 @@
     position: absolute;
     top: 35%;
     right: 12%;
+}
 
+.choose-us__button:hover::after {
+    content: url(../img/right.svg);
+    position: absolute;
+    top: 35%;
+    right: 9%;
 }

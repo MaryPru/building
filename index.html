@@ -28,8 +28,10 @@
         <header class="header">
             <div class="header__container container">
                 <i class="header__icon icon-home"></i> <span class="header__icon-name">Building</span>
+                <div class="header__burger burger">
+                    <span class="burger__item"></span>
+                </div>
                 <nav class="header__menu menu">
-
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__item-link" href="">Home</a></li>
                         <li class="menu__item"><a class="menu__item-link" href="">Services</a></li>
@@ -304,7 +306,7 @@
                             <input class="form__input" type="email" id="email" name="email"
                                 placeholder="Enter Your Mail..">
                             <div class="form__button ">
-                                <button class="form__button-subscribe btn">Subcribe</button>
+                                <button type="submit" class="form__button-subscribe btn">Subcribe</button>
                             </div>
                         </div>
                     </form>
@@ -313,7 +315,11 @@
             <footer class="footer">
                 <div class="footer__container container">
                     <div class="footer__desc">
-                        <i class="footer__icon icon-home"></i> <span class="footer__icon-name">Building</span>
+                        <div class="footer__icon-wrap">
+                            <i class="footer__icon icon-home"></i>
+                            <span class="footer__icon-name">Building</span>
+                        </div>
+
                         <p class="footer__subtitle ">Lorem ipsum dolor sit amet, consectet adipiscing elit. Quam turpis
                             sed ut fam tortor pharetra. Lorem auctor congue pellentesque facilisis diam</p>
                         <div class="footer__socials">
@@ -322,9 +328,9 @@
                             <a class="footer__socials-link" href=""> <i
                                     class="footer__socials-icon icon-twitter"></i></a>
                             <a class="footer__socials-link" href="">
-                                 <i class="footer__socials-icon icon-insta"></i></a>
+                                <i class="footer__socials-icon icon-insta"></i></a>
                             <a class="footer__socials-link" href="">
-                                 <i class="footer__socials-icon icon-in"></i> </a>
+                                <i class="footer__socials-icon icon-in"></i> </a>
                         </div>
                     </div>
                     <nav class="footer__menu menu">
@@ -348,7 +354,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu__item"><a class="menu__link-footer" href="">Services</a>
+                            <li class="menu__item-footer"><a class="menu__link-footer" href="">Services</a>
                                 <ul class="menu__subitem link">
                                     <li class="link__subitem-paragraph paragraph">
                                         <a class="paragraph__link" href="">Site map</a>
@@ -364,7 +370,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu__item"><a class="menu__link-footer" href="">About Us</a>
+                            <li class="menu__item-footer"><a class="menu__link-footer" href="">About Us</a>
                                 <ul class="menu__subitem link">
                                     <li class="link__subitem-paragraph paragraph">
                                         <a class="paragraph__link" href="">About us</a>
@@ -380,16 +386,16 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu__item"><a class="menu__link-footer" href="">Contact</a>
+                            <li class="menu__item-footer"><a class="menu__link-footer" href="">Contact</a>
                                 <ul class="menu__subitem link">
-                                    <li class="link__subitem-paragraph paragraph">
-                                        <a class="paragraph__link" href="">+888 561 258</a>
+                                    <li class="link__subitem-paragraph paragraph phone">
+                                        <a class="paragraph__link " href="">+888 561 258</a>
                                     </li>
-                                    <li class="link__subitem-paragraph paragraph">
-                                        <a class="paragraph__link" href="">webmaile@gmail.com</a>
+                                    <li class="link__subitem-paragraph paragraph mail">
+                                        <a class="paragraph__link " href="">webmaile@gmail.com</a>
                                     </li>
-                                    <li class="link__subitem-paragraph paragraph">
-                                        <a class="paragraph__link" href="">Google play</a>
+                                    <li class="link__subitem-paragraph paragraph gplay">
+                                        <a class="paragraph__link " href="">Google play</a>
                                     </li>
                                 </ul>
                             </li>
@@ -401,5 +407,19 @@
     </div>
 
 </body>
+<script>
+    let burger = document.querySelector('.burger');
+    let menu = document.querySelector('.header__menu');
+    let menu__list = document.querySelector('.menu__list');
+
+    burger.onclick = function () {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+
+    menu__list.onclick = function () {
+        menu__list.classList.remove('active');
+    }
+</script>
 
 </html>

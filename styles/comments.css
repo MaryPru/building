@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 139px;
 }
 
 .comments__card {
@@ -30,6 +31,10 @@
     margin-right: 30px;
     padding: 81px 38px 31px;
     position: relative;
+}
+
+.comments__card:last-child{
+    margin-right: 0;
 }
 
 .comments__card-name {
@@ -47,10 +52,15 @@
 
 .comments__title{
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .comments__subtitle{
-    margin-bottom: 139px;
+    text-align: center;
     
+}
+
+.comments__card-subtitle{
+    text-align: center;
 }
 

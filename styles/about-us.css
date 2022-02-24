@@ -35,11 +35,13 @@ margin-right: 42px;
 
 .about-us__title{
     margin-bottom: 24px;
+    text-align: left;
 }
 
 .about-us__subtitle{
     margin-bottom: 40px;
     padding-right: 50px;
+    text-align: left;
 }
 
 .about-us__items{
@@ -56,11 +58,16 @@ margin-right: 42px;
 .about-us-item__icon{
     font-size: 56px;
     color: #19BCE4;
-    margin-bottom: 24px;
 }
 
 .about-us-item__title{
     margin-bottom: 16px;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.about-us-item__subtitle{
+    text-align: left;
 }
 
 .about-us__button{

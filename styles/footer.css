@@ -39,8 +39,43 @@
     margin-bottom: 38px;
 }
 
-.footer__socials-link{
+.footer__socials-link {
     font-size: 20px;
     color: #19BCE4;
     margin-right: 10px;
+    transition: 400ms;
+}
+
+.footer__socials-link:hover{
+    color: #1d3e63;
+}
+
+.paragraph{
+    position: relative;
+}
+
+.phone::before {
+    content: url(../img/phone.svg);
+    position: absolute;
+    top: 4px;
+    left: -23px;
+}
+
+.mail::before{
+    content: url(../img/gmail.png);
+    position: absolute;
+    top: 4px;
+    left: -23px;
+}
+
+.gplay::before{
+    content: url(../img/playstore.svg);
+    position: absolute;
+    top: 4px;
+    left: -23px;
+}
+
+.footer__icon-wrap{
+    display: flex;
+    align-items: center;
 }

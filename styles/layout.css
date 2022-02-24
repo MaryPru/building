@@ -29,10 +29,16 @@ ul {
 }
 
 a {
-    text-decoration: none;
     color: #02012B;
     cursor: pointer;
-    ;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 400ms;
+
+}
+
+
+a:hover {
+    text-decoration-color: #19BCE4;
 }
 
 p {
@@ -91,6 +97,7 @@ header {
     max-width: 1440px;
     width: 100%;
     position: relative;
+    margin: 0 auto;
 }
 
 .container {
@@ -115,6 +122,12 @@ header {
     color: #FFFFFF;
     width: 100%;
     cursor: pointer;
+    transition: 400ms;
+}
+
+.btn:hover {
+    background: #1d3e63;
+    color: aliceblue;
 }
 
 .btn--rectangle {
@@ -124,13 +137,10 @@ header {
 .title {
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 61px;
+    font-size: 3rem;
+    line-height: 3.8125rem;
     color: #222222;
-    text-align: center;
 }
-
-
 
 .title--white {
     color: white;
@@ -139,10 +149,9 @@ header {
 .subtitle {
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
     color: #555555;
-    text-align: center;
 }
 
 .subtitle--white {
@@ -160,18 +169,42 @@ header {
 .title--small {
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     color: #222222;
 }
 
 
 
 .icon-home {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: rgba(25, 188, 228, 1);
+    transition: 400ms;
+    cursor: pointer;
+}
+
+
+.icon-home:hover {
+    color: #1d3e63;
 }
 
 .image {
     max-width: 100%;
+}
+
+@media (max-width:1190px) {
+    html {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        max-width: 1190px;
+    }
+
+    .container{
+        padding: 0 20px;
+    }
+    
+  
+
 }
